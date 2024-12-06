@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class Test34 {
+public class BrandController05 {
 
     @Test
     public void loginToSystem() {
@@ -29,7 +29,7 @@ public class Test34 {
         request.header("Content-Type", "application/json");
         
         // Send the GET request with query parameters
-        Response response = request.get("/clarities"); 
+        Response response = request.get("/brands"); 
         
         if (response.getStatusCode() == 401) {
 			System.out.println("Token expired. Please generate a new token.");
