@@ -7,7 +7,7 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class AddressController02 {
+public class UserRoleAssignController01 {
 
     @Test
     public void loginToSystem() {
@@ -36,7 +36,7 @@ public class AddressController02 {
         request.pathParam("auctionId", auctionId);
         
         // Send the GET request with query parameters
-        Response response = request.get("/bid/getMyBidstatusData/{userId}/{auctionId}"); 
+        Response response = request.get("/user/role/{userId}"); 
         
         if (response.getStatusCode() == 401) {
             System.out.println("Token expired. Please generate a new token.");
