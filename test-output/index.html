@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\ESAMYAK121\AppData\Local\Temp\testng-eclipse--839722707\testng-customsuite.xml</span>
+                    <span>C:\Users\ESAMYAK121\AppData\Local\Temp\testng-eclipse-551068551\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="get_restassured.UserController01" class="method navigator-link" hash-for-method="loginToSystem">loginToSystem</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="post_restassured.PolishController02" class="method navigator-link" hash-for-method="createSymmetry">createSymmetry</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,17 +122,19 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">get_restassured.UserController01</span>
+              <span class="class-name">post_restassured.PolishController02</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToSystem">
-                  </a> <!-- loginToSystem -->
-                  <span class="method-name">loginToSystem</span>
-                  <div class="stack-trace">java.lang.AssertionError: Request failed due to token expiration.
+                  <a name="createSymmetry">
+                  </a> <!-- createSymmetry -->
+                  <span class="method-name">createSymmetry</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected 200 OK or 201 Created, but got: 403 expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:99)
-	at get_restassured.UserController01.loginToSystem(UserController01.java:44)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at post_restassured.PolishController02.createSymmetry(PolishController02.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -168,7 +170,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ESAMYAK121\AppData\Local\Temp\testng-eclipse--839722707\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\ESAMYAK121\AppData\Local\Temp\testng-eclipse-551068551\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -177,7 +179,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;get_restassured.UserController01&quot;/&gt;
+      &lt;class name=&quot;post_restassured.PolishController02&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -219,14 +221,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToSystem')
-data.setCell(0, 2, 'get_restassured.UserController01')
-data.setCell(0, 3, 1855);
+data.setCell(0, 1, 'createSymmetry')
+data.setCell(0, 2, 'post_restassured.PolishController02')
+data.setCell(0, 3, 2553);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -252,11 +254,11 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">get_restassured.UserController01</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">post_restassured.PolishController02</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginToSystem</span>
+                <span class="method-name">createSymmetry</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

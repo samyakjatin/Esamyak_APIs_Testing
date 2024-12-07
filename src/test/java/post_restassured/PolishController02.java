@@ -14,19 +14,20 @@ public class PolishController02 {
     @Test
     public void createSymmetry() {
         
+    	  
         // Set the base URI
         RestAssured.baseURI = "http://localhost:8080/api/v1"; 
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg3NjM2MSwiZXhwIjoxNzMyODgyMzYxfQ.bvijtZWgLMrELm8khTPxvEZIOss3NNxr7o8f_a5jZTc";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM1NTM1MDcsImV4cCI6MTczMzU4MzUwN30.GLomJ4uczrIsYZSuTGJ5oIEUGWjQV5_WwnYZnkuUB44";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to multipart/form-data
         request.header("Content-Type", "multipart/form-data");  
         
         // Create the multipart body for the POST request
-        File file = new File("C:\\Users\\SAMYAK111\\Desktop\\Test\\polishcontroller03.txt");
+        File file = new File("C:\\Users\\ESAMYAK121\\Desktop\\Testing\\polish_Masters_Excel.xlsx");
         
         // Add the file to the request
         request.multiPart("file", file);
