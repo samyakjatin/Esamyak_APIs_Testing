@@ -17,7 +17,7 @@ public class SymmetryController02 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwibGFzdE5hbWUiOiJEb2UiLCJ1c2VySWQiOiIzNDUwMDYwMi03MjZkLTRlYjQtOTFiNi02YWYyMWQ5ZThkYTIiLCJmaXJzdE5hbWUiOiJ3YWdoIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM1NDYzNDQsImV4cCI6MTczMzU3NjM0NH0.xNFAH4C_aSJmbpgZD6a98Gyqr6jfYTZJ_x-LwbbRD7s";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM3NDMyNTcsImV4cCI6MTczMzc3MzI1N30.MyXzP7Z2k7UQCjjMvQ1S2U9z9YluCIhCYJIi3dkRT_8";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to application/json
@@ -25,13 +25,10 @@ public class SymmetryController02 {
         
         // Create the JSON body for the POST request
         String jsonBody = "{\n" +
-                          "  \"desc\": \"string\",\n" +
-                          "  \"code\": \"string\",\n" +
-                          "  \"srNo\": 0,\n" +
-                          "  \"symmetryId\": \"3fa85f64-5717-4562-b3fc-2c963f66afa6\",\n" +
-                          "  \"name\": \"string\",\n" +
-                          "  \"count\": 0,\n" +
-                          "  \"createdDate\": \"string\"\n" +
+                          "  \"desc\": \"dipanshu\",\n" +
+                          "  \"code\": \"ghi\",\n" +
+                          "  \"srNo\": 7,\n" +
+                          "  \"name\": \"dipanshu\"\n" +  // Removed the trailing comma here
                           "}";
         
         // Add the JSON body to the request

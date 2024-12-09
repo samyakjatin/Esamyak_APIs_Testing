@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="post_restassured.PolishController02">
+      <class name="post_restassured.SymmetryController02">
         <methods>
           <include name="createSymmetry"/>
         </methods>
-      </class> <!-- post_restassured.PolishController02 -->
+      </class> <!-- post_restassured.SymmetryController02 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

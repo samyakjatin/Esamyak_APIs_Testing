@@ -19,14 +19,14 @@ public class PolishController03 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwibGFzdE5hbWUiOiJEb2UiLCJ1c2VySWQiOiIzNDUwMDYwMi03MjZkLTRlYjQtOTFiNi02YWYyMWQ5ZThkYTIiLCJmaXJzdE5hbWUiOiJ3YWdoIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM1NDYzNDQsImV4cCI6MTczMzU3NjM0NH0.xNFAH4C_aSJmbpgZD6a98Gyqr6jfYTZJ_x-LwbbRD7s";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM3Mzk5NTIsImV4cCI6MTczMzc2OTk1Mn0.D20-8w2yPagLvXCRwJN1i420TGbabfaV9-x7PONketk";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to multipart/form-data
         request.header("Content-Type", "multipart/form-data");  
         
         // Create the multipart body for the POST request
-        File file = new File("C:\\Users\\ESAMYAK121\\Desktop\\Testing\\polishcontroller03.txt");
+        File file = new File("C:\\\\Users\\\\ESAMYAK121\\\\Desktop\\\\Testing\\\\polish_Masters_Excel.xlsx");
         
         // Add the file to the request
         request.multiPart("file", file);
