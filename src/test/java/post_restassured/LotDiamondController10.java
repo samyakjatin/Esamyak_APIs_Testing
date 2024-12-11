@@ -2,7 +2,6 @@ package post_restassured;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -17,7 +16,7 @@ public class LotDiamondController10 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg3NTMwOSwiZXhwIjoxNzMyODgxMzA5fQ.MwKpHmg5Y0bcLZ3TY1tySHbdAgOFJ_YHpPLrpiPcdas";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4MDk4MDEsImV4cCI6MTczMzgzOTgwMX0.h_CZ5cRNOBr9_0-REeyW1TP2Vw7GN6dpskfRthP_hv8";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to application/json
@@ -124,8 +123,7 @@ public class LotDiamondController10 {
                 "  \"videoLinkCorrection\": \"string\",\n" +
                 "  \"endDateTimeCorrection\": \"string\",\n" +
                 "  \"negotiationEndTimeCorrection\": \"string\",\n" +
-                "  \"certNumber\": \"string\",\n" +
-                "  \"tPrice\": 1000\n" +  // Added tPrice with a non-null value
+                "  \"certNumber\": \"string\"\n" +
                 "}";
         
         // Add the JSON body to the request

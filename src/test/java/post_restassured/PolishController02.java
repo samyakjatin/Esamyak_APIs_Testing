@@ -17,7 +17,7 @@ public class PolishController02 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM3Mzk5NTIsImV4cCI6MTczMzc2OTk1Mn0.D20-8w2yPagLvXCRwJN1i420TGbabfaV9-x7PONketk";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4MDQ1OTcsImV4cCI6MTczMzgzNDU5N30.9dV19llz4qV07uSO7OIpbfOegJo8f30uCBdd5VcBf9k";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to application/json
@@ -35,7 +35,7 @@ public class PolishController02 {
         request.body(jsonBody);
         
         // Send the POST request
-        Response response = request.post("/symmetry");
+        Response response = request.post("/polish");
         
         // Print the response status and body for debugging
         System.out.println("The status received: " + response.statusLine());

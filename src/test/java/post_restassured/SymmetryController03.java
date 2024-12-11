@@ -19,14 +19,14 @@ public class SymmetryController03 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwibGFzdE5hbWUiOiJEb2UiLCJ1c2VySWQiOiIzNDUwMDYwMi03MjZkLTRlYjQtOTFiNi02YWYyMWQ5ZThkYTIiLCJmaXJzdE5hbWUiOiJ3YWdoIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM1NDYzNDQsImV4cCI6MTczMzU3NjM0NH0.xNFAH4C_aSJmbpgZD6a98Gyqr6jfYTZJ_x-LwbbRD7s";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4MTMyOTgsImV4cCI6MTczMzg0MzI5OH0.eYK_iabU-b_zmSMdDEf41R6M_qDN0gSosKaww53zj1E";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to multipart/form-data for file upload
         request.header("Content-Type", "multipart/form-data");  
         
         // Specify the file to upload (replace with your actual file path)
-        File file = new File("path_to_your_file.xlsx");  // Update with actual file path
+        File file = new File("C:\\Users\\ESAMYAK121\\Desktop\\Testing\\symmetry_Masters_Excel.xlsx");  // Update with actual file path
         
         // Add the file as part of the multipart request
         request.multiPart("file", file);
