@@ -22,7 +22,7 @@ public class LotDiamondController11 {
         request.queryParam("password", "samyak@2024");
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg4MTgzMCwiZXhwIjoxNzMyODg3ODMwfQ.OGm9zfCrqoxwLEZ16Sg8mnTlLgs7iHVGbAwfltdji58";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjpmYWxzZSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4MDQ1OTcsImV4cCI6MTczMzgzNDU5N30.9dV19llz4qV07uSO7OIpbfOegJo8f30uCBdd5VcBf9k";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         
@@ -31,10 +31,10 @@ public class LotDiamondController11 {
         request.header("Content-Type", "multipart/form-data");  
         
         // Create the multipart body for the POST request
-        File file = new File("C:\\Users\\SAMYAK111\\Desktop\\Test\\LotDiamondController11.xlsx");
+      File file = new File("C:\\Users\\SAMYAK111\\Desktop\\Test\\LotDiamondController11.xlsx");
         
         // Add the file to the request
-        request.multiPart("file", file);
+       request.multiPart("file", file);
        
       
         
