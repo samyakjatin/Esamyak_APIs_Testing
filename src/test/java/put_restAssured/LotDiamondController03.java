@@ -20,7 +20,7 @@ public class LotDiamondController03 {
         request.queryParam("password", "samyak@2024");
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIzNDUwMDYwMi03MjZkLTRlYjQtOTFiNi02YWYyMWQ5ZThkYTIiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6ZmFsc2UsImxhc3ROYW1lIjoiRG9lIiwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM5ODIwNTMsImV4cCI6MTczNDAxMjA1M30.G-_vqAVMjYfBcs4obmukE_AWmfZ5uJScO2L4ABQ5K5k";  
+        String token = Config.token;  // Get token from the Config class     
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

@@ -19,7 +19,7 @@ public class PolishController03 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM3Mzk5NTIsImV4cCI6MTczMzc2OTk1Mn0.D20-8w2yPagLvXCRwJN1i420TGbabfaV9-x7PONketk";  // Make sure to use the actual token
+        String token = Config.token;  // Get token from the Config class     
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to multipart/form-data

@@ -22,7 +22,7 @@ public class DatabaseBackupController03{
         
         // Add Authorization header for Bearer Token Authentication
         // Replace 'your_token_here' with the actual Bearer token you received
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg2Mzc3MywiZXhwIjoxNzMyODY5NzczfQ.aX0A3cSABjeelgHDQ5ZoGBBRzumV1tyiBIPIIz5vDmU";  // Make sure to use the actual token
+        String token = Config.token;  // Get token from the Config class     
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

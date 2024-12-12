@@ -16,7 +16,7 @@ public class ItemStatusController01 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiJkNmZjNGJjMS0zYjNiLTQ1MzEtODRiNy1kZDlhYzkyNDkyMmUiLCJmaXJzdE5hbWUiOiJESEFWQUwiLCJyb2xlcyI6WyJBdWN0aW9uZWVyIl0sImFjdGl2ZSI6ZmFsc2UsImxhc3ROYW1lIjoiU2hhcm1hIiwic3ViIjoiZGhhdmFsLnNoYXJtYSIsImlhdCI6MTczMzk3Nzg0MCwiZXhwIjoxNzM0MDA3ODQwfQ.a_6mbXlY2BeaVZed_Q5Xi5l9t9K87BkfPkNdlbCoPwA";  // Make sure to use the actual token
+        String token = Config.token;  // Get token from the Config class     
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Set the Content-Type header to application/json
