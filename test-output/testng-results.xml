@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-11T12:21:39 IST" name="Default suite" finished-at="2024-12-11T12:21:41 IST" duration-ms="1719">
+  <suite started-at="2024-12-12T13:04:07 IST" name="Default suite" finished-at="2024-12-12T13:04:08 IST" duration-ms="1797">
     <groups>
     </groups>
-    <test started-at="2024-12-11T12:21:39 IST" name="Default test" finished-at="2024-12-11T12:21:41 IST" duration-ms="1719">
-      <class name="delete_restAssured.FavouriteController02">
-        <test-method signature="deleteUser()[pri:0, instance:delete_restAssured.FavouriteController02@294425a7]" started-at="2024-12-11T12:21:39 IST" name="deleteUser" finished-at="2024-12-11T12:21:41 IST" duration-ms="1678" status="PASS">
+    <test started-at="2024-12-12T13:04:07 IST" name="Default test" finished-at="2024-12-12T13:04:08 IST" duration-ms="1797">
+      <class name="put_restAssured.BidController02">
+        <test-method signature="updateUser()[pri:0, instance:put_restAssured.BidController02@294425a7]" started-at="2024-12-12T13:04:07 IST" name="updateUser" finished-at="2024-12-12T13:04:08 IST" duration-ms="1758" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- delete_restAssured.FavouriteController02 -->
+        </test-method> <!-- updateUser -->
+      </class> <!-- put_restAssured.BidController02 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
