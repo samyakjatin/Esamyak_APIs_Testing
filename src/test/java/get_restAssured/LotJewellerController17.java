@@ -21,8 +21,7 @@ public class LotJewellerController17 {
 		request.queryParam("password", "samyak@2024");
 
 		// Add Authorization header for Bearer Token Authentication
-		String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjEwNWM4NDRiLTVjZWYtNDRiMi1hZTMxLTk0MWJmYjk0NzM3NiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjI2ODgzMiwiZXhwIjoxNzMyMjc0ODMyfQ.Pbjzf8hKwwMivUWvTEGMu5SUTVk8Krd2umr6nJHnUko"; // Make
-																																																																																// sure
+		  String token = Config.token;  // Get token from the Config class     																																																																																// sure
 																																																																																// to
 																																																																																// use
 																																																																																// the

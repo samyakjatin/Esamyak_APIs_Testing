@@ -16,8 +16,9 @@ public class AnnouncementController04 {
         RequestSpecification request = RestAssured.given();
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOmZhbHNlLCJyb2xlcyI6WyJCaWRkZXIiXSwic3ViIjoicHJhc2hhbnQiLCJpYXQiOjE3MzM4ODcyNzAsImV4cCI6MTczMzkxNzI3MH0.54rSsC6MaUAr_np2qNCxdd3FS6HkJfxdHuWcFz0S3VI";  // Make sure to use the actual token
+        String token = Config.token;  // Get token from the Config class          
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
+        
         
         // Set the Content-Type header to application/json
         request.header("Content-Type", "application/json");  
