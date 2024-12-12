@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="delete_restAssured.AuctionController02">
+      <class name="put_restAssured.LotJewelleryController05">
         <methods>
-          <include name="deleteUser"/>
+          <include name="updateUser"/>
         </methods>
-      </class> <!-- delete_restAssured.AuctionController02 -->
+      </class> <!-- put_restAssured.LotJewelleryController05 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
