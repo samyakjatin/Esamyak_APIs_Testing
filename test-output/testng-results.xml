@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-12T13:28:31 IST" name="Default suite" finished-at="2024-12-12T13:28:33 IST" duration-ms="1775">
+  <suite started-at="2024-12-13T16:24:33 IST" name="Default suite" finished-at="2024-12-13T16:24:35 IST" duration-ms="1883">
     <groups>
     </groups>
-    <test started-at="2024-12-12T13:28:31 IST" name="Default test" finished-at="2024-12-12T13:28:33 IST" duration-ms="1775">
-      <class name="get_restAssured.AddressController03">
-        <test-method signature="loginToSystem()[pri:0, instance:get_restAssured.AddressController03@294425a7]" started-at="2024-12-12T13:28:31 IST" name="loginToSystem" finished-at="2024-12-12T13:28:33 IST" duration-ms="1732" status="PASS">
+    <test started-at="2024-12-13T16:24:33 IST" name="Default test" finished-at="2024-12-13T16:24:35 IST" duration-ms="1883">
+      <class name="put_restAssured.PolishController01">
+        <test-method signature="createSymmetry()[pri:0, instance:put_restAssured.PolishController01@294425a7]" started-at="2024-12-13T16:24:33 IST" name="createSymmetry" finished-at="2024-12-13T16:24:35 IST" duration-ms="1837" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToSystem -->
-      </class> <!-- get_restAssured.AddressController03 -->
+        </test-method> <!-- createSymmetry -->
+      </class> <!-- put_restAssured.PolishController01 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
