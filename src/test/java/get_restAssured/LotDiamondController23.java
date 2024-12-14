@@ -27,11 +27,11 @@ public class LotDiamondController23{
         
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
-        
-      String userId="7828500F-5781-40D5-9E61-ADF2A09EB993";
+   
       // String supplierId=" C2BEE3F2-5B36-4D81-AD16-F184574241F1";
         String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
-        String lotId = ""; 
+      String userId="7828500F-5781-40D5-9E61-ADF2A09EB993";
+        String lotId = "939f3fd2-6153-493a-9c02-bd32cd2859cb";
        
          	
         // Add path parameters dynamically

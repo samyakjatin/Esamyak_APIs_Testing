@@ -2,7 +2,7 @@ package get_restAssured;
 
 public class Config {
     // Static variable to store the token
-    public static String token = "eyJhbGciOiJIUzI1NiJ9.eyJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMzQ1MDA2MDItNzI2ZC00ZWI0LTkxYjYtNmFmMjFkOWU4ZGEyIiwibGFzdE5hbWUiOiJEb2UiLCJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMzk5MDEyOCwiZXhwIjoxNzM0MDIwMTI4fQ.38jsS6ry0IMUIL-KvlovBcN73c4zoxCn7yjDkC8jK4Q";
+    public static String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNDE2MTA5OCwiZXhwIjoxNzM0MTkxMDk4fQ.VpGF4Ys-gQol4m_v1Ue0LF5wKjZUd-kyCEY7SiPTvko";
     
     // You can add more static variables for other configurations as needed
 }

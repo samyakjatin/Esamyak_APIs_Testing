@@ -39,13 +39,15 @@ public class PolishController01 {
         
        // String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
        // String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+         String polishId = "cc4e6bcf-b131-11ef-a57f-c8d3ffbc6ac6";
         
         // Add path parameters dynamically
        // request.pathParam("userId", userId);
        // request.pathParam("auctionId", auctionId);
+          request.pathParam("polishId", polishId);
         
         // Send the POST request
-        Response response = request.post("/polish/{polishId}");
+        Response response = request.put("/polish/{polishId}");
         
         // Print the response status and body for debugging
         System.out.println("The status received: " + response.statusLine());

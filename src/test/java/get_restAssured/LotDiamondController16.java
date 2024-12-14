@@ -30,11 +30,16 @@ public class LotDiamondController16{
         
       // String userId="7828500F-5781-40D5-9E61-ADF2A09EB993";
         //String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+      String supplierId = "88be816b-c3e9-432b-9111-45af8ba70bfb"; 
+      String boxNo = "BOX1"; 
        
          	
         // Add path parameters dynamically
        // request//.pathParam("userId", userId)
         //.pathParam("auctionId", auctionId);
+      request.pathParam("supplierId", supplierId);
+      request.pathParam("boxNo", boxNo);
+      
         
         // Send the GET request with query parameters
         Response response = request.get("/lotDiamond/boxCount/{boxNo}/{supplierId}"); 

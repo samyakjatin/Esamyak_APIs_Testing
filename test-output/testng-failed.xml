@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="get_restAssured.AddressController03">
+      <class name="put_restAssured.ColourController01">
         <methods>
-          <include name="loginToSystem"/>
+          <include name="updateUser"/>
         </methods>
-      </class> <!-- get_restAssured.AddressController03 -->
+      </class> <!-- put_restAssured.ColourController01 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
