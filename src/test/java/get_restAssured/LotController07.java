@@ -7,8 +7,8 @@ import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class LotDiamondController22{
- 
+public class LotController07 {
+
     @Test
     public void loginToSystem() {
         
@@ -28,23 +28,21 @@ public class LotDiamondController22{
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
         
-      // String userId="7828500F-5781-40D5-9E61-ADF2A09EB993";
-      // String supplierId=" C2BEE3F2-5B36-4D81-AD16-F184574241F1";
-       // String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
-        String lotId = "939f3fd2-6153-493a-9c02-bd32cd2859cb"; 
-       
-         	
-        // Add path parameters dynamically
-        //request.pathParam("supplierId", supplierId)
-       request.pathParam("lotId", lotId);
+        
+        
+        // String userId="7828500F-5781-40D5-9E61-ADF2A09EB993";
+         String supplierId=" C2BEE3F2-5B36-4D81-AD16-F184574241F1";
+          String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+            String boxNo = "BOX1"; 
+         
+           	
+          // Add path parameters dynamically
+          request.pathParam("supplierId", supplierId);
+        request.pathParam("auctionId", auctionId);
+            request.pathParam("boxNo", boxNo);
         
         // Send the GET request with query parameters
-        Response response = request.get("/lot-diamond/{lotId}"); 
-        
-        if (response.getStatusCode() == 401) {
-			System.out.println("Token expired. Please generate a new token.");
-			Assert.fail("Request failed due to token expiration.");
-		}
+        Response response = request.get("/lot/boxWiseCount/{boxNo}/{supplierId}/{auctionId}"); 
         
         // Print the response status and body for debugging
         System.out.println("The status received: " + response.statusLine());
