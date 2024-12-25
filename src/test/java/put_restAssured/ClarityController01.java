@@ -44,12 +44,12 @@ public class ClarityController01 {
         
      // String auctionId = "3fa85f64-5717-4562-b3fc-2c963f66afa6"; 
  //  String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
-      String colorId = "cc33cea7-b131-11ef-a57f-c8d3ffbc6ac6"; 
+      String clarityId = "cc33cea7-b131-11ef-a57f-c8d3ffbc6ac6"; 
       
       
           // request.pathParam("userId", userId);
          // request.pathParam("auctionId", auctionId);
-          request.pathParam("colorId ", colorId );
+          request.pathParam("clarityId",  clarityId  );
         
         // Send the PUT request
         Response response = request.put("/clarity/{clarityId}");

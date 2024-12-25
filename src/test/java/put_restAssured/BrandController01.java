@@ -49,7 +49,7 @@ public class BrandController01 {
       
           // request.pathParam("userId", userId);
          // request.pathParam("auctionId", auctionId);
-          request.pathParam("brandId ", brandId );
+          request.pathParam("brandId", brandId );
         
         // Send the PUT request
         Response response = request.put("brand/{brandId}");

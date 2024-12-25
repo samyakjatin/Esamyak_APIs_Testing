@@ -31,7 +31,7 @@ public class LotJewelleryController14 {
         
      
         String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
-        String lotId = "MG001"; 
+        String lotId = "86d0cbe9-512d-460c-9d65-63a65cb78614"; 
         String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993"; 
        
         

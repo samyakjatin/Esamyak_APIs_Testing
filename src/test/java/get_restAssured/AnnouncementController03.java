@@ -33,7 +33,7 @@ public class AnnouncementController03 {
         String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
         
         // Add path parameters dynamically
-       request.pathParam("userId", userId);
+      request.pathParam("userId", userId);
         request.pathParam("auctionId", auctionId);
         
         // Send the GET request with query parameters

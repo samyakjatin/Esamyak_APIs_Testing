@@ -15,6 +15,11 @@ public class AnnouncementController04 {
         RestAssured.baseURI = "http://localhost:8080/api/v1"; 
         RequestSpecification request = RestAssured.given();
         
+        // Add query parameters for GET request (username, password, lotDiamondInfo)
+        request.queryParam("username", "dhaval.sharma");
+        request.queryParam("password", "samyak@2024");
+     
+        
         // Add Authorization header for Bearer Token Authentication
         String token = Config.token;  // Get token from the Config class          
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
