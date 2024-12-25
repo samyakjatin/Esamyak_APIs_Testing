@@ -49,7 +49,7 @@ public class ColourController01 {
       
           // request.pathParam("userId", userId);
          // request.pathParam("auctionId", auctionId);
-          request.pathParam("colorId ", colorId );
+          request.pathParam("colorId", colorId );
         
         // Send the PUT request
         Response response = request.put("/color/{colorId}");
