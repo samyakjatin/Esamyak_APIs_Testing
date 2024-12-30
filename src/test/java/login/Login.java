@@ -10,7 +10,7 @@ import io.restassured.specification.RequestSpecification;
 
 public class Login {
 
-	@Test
+	@Test(description ="To verify login functionality")
 	public void loginToSystem() {
 		
 		RestAssured.baseURI = "http://localhost:8080/api/v1"; 

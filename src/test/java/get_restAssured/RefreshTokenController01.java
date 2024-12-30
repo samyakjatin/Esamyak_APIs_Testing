@@ -15,6 +15,7 @@ public class RefreshTokenController01 {
         RestAssured.baseURI = "http://localhost:8080/api/v1"; 
         RequestSpecification request = RestAssured.given();
         
+        
         // Add query parameters for GET request (username, password)
         request.queryParam("username", "dhaval.sharma");
         request.queryParam("password", "samyak@2024");
