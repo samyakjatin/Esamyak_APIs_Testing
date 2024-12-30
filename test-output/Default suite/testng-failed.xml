@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="get_restAssured.RefreshTokenController01">
+      <class name="get_restAssured.Bid_Controller_05">
         <methods>
-          <include name="createSymmetry"/>
+          <include name="loginToSystem02"/>
+          <include name="loginToSystem01"/>
         </methods>
-      </class> <!-- get_restAssured.RefreshTokenController01 -->
+      </class> <!-- get_restAssured.Bid_Controller_05 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

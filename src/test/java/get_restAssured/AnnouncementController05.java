@@ -28,12 +28,12 @@ public class AnnouncementController05 {
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
         
-        String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
-        String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+        //String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
+        //String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
         
         // Add path parameters dynamically
-       request.pathParam("userId", userId);
-        request.pathParam("auctionId", auctionId);
+      // request.pathParam("userId", userId);
+       // request.pathParam("auctionId", auctionId);
         
         // Send the GET request with query parameters
         Response response = request.get("/master/annoucement"); 
