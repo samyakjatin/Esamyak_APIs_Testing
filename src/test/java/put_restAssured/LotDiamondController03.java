@@ -1,13 +1,12 @@
-package get_restassured;
+package put_restAssured;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
-public class GemStoneController02 {
+public class LotDiamondController03 {
 
     @Test
     public void loginToSystem() {
@@ -16,29 +15,39 @@ public class GemStoneController02 {
         RestAssured.baseURI = "http://localhost:8080/api/v1"; 
         RequestSpecification request = RestAssured.given();
         
-        // Add query parameters for GET request (username, password)
+        // Add query parameters for GET request (username, password, lotDiamondInfo)
         request.queryParam("username", "dhaval.sharma");
         request.queryParam("password", "samyak@2024");
         
         // Add Authorization header for Bearer Token Authentication
-        // Replace 'your_token_here' with the actual Bearer token you received
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMTA1Yzg0NGItNWNlZi00NGIyLWFlMzEtOTQxYmZiOTQ3Mzc2IiwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjM1NjMxOSwiZXhwIjoxNzMyMzYyMzE5fQ.ErLWZDJ_lEBx7oIweQagqvQq0zMZnhUeJxAU9tzTNO8";  // Make sure to use the actual token
+        String token = Config.token;  // Get token from the Config class     
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
         
-        // Send the GET request with query parameters
-        Response response = request.get("/gem-stone"); 
+        String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
+        String supplierId= "C2BEE3F2-5B36-4D81-AD16-F184574241F1";
+        boolean active = true; // Set the active field value here
+        
+        // Add path parameters dynamically
+        request.pathParam("auctionId", auctionId);
+        request.pathParam("supplierId", supplierId);
+        request.pathParam("active", active);
+        
+       
+        
+        // Send the PUT request with query parameters
+        Response response = request.put("/lot/activate/all/{supplierId}/{auctionId}/{active}"); 
         
         if (response.getStatusCode() == 401) {
-			System.out.println("Token expired. Please generate a new token.");
-			Assert.fail("Request failed due to token expiration.");
-		}
+            System.out.println("Token expired. Please generate a new token.");
+            Assert.fail("Request failed due to token expiration.");
+        } 
         
         // Print the response status and body for debugging
         System.out.println("The status received: " + response.statusLine());
-        System.out.println("Response: " + response.getBody().asString());  // Added response logging
+        System.out.println("Response: " + response.getBody().asString());
         System.out.println("---------------Response Details---------------");
         int statusCode = response.getStatusCode();
         System.out.println("Status Code: " + statusCode);
@@ -52,5 +61,8 @@ public class GemStoneController02 {
 
         // Assert that the status code is 200 (OK), or change the expectation if 403 is valid
         Assert.assertEquals(statusCode, 200, "Expected 200 OK, but got: " + statusCode);
+
+       
+        
     }
 }

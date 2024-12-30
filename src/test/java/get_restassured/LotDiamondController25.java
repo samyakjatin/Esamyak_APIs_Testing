@@ -22,7 +22,7 @@ public class LotDiamondController25{
         
         // Add Authorization header for Bearer Token Authentication
         // Replace 'your_token_here' with the actual Bearer token you received
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VySWQiOiIxMDVjODQ0Yi01Y2VmLTQ0YjItYWUzMS05NDFiZmI5NDczNzYiLCJmaXJzdE5hbWUiOiJ3YWdoIiwicm9sZXMiOlsiQmlkZGVyIl0sImFjdGl2ZSI6dHJ1ZSwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjg1NzQxMiwiZXhwIjoxNzMyODYzNDEyfQ.AFZvwagwUxFfWrCZPJp5agxjDlBlpZ2izxt68ifqYfw";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI5NjI0OCwiZXhwIjoxNzM1MzI2MjQ4fQ.MKfITE5ivdYZ15uvYHIBCV5F_--_anFV0C-Wq3l82L0";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

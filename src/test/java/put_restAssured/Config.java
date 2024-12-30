@@ -1,0 +1,9 @@
+package put_restAssured;
+
+public class Config {
+	
+	
+    public static String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsImFjdGl2ZSI6dHJ1ZSwicm9sZXMiOlsiQmlkZGVyIl0sImZpcnN0TmFtZSI6IndhZ2giLCJ1c2VySWQiOiIzNDUwMDYwMi03MjZkLTRlYjQtOTFiNi02YWYyMWQ5ZThkYTIiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNDY5MjMwNCwiZXhwIjoxNzM0NzIyMzA0fQ.NTcyVj6u6koQhVYJ_1IXjPqqNDx0kU8YbaIA5eI5p70";
+
+}
+

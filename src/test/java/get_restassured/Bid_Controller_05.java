@@ -22,7 +22,7 @@ public class Bid_Controller_05 {
         
         // Add Authorization header for Bearer Token Authentication
         // Replace 'your_token_here' with the actual Bearer token you received
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMTA1Yzg0NGItNWNlZi00NGIyLWFlMzEtOTQxYmZiOTQ3Mzc2IiwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjM1NjMxOSwiZXhwIjoxNzMyMzYyMzE5fQ.ErLWZDJ_lEBx7oIweQagqvQq0zMZnhUeJxAU9tzTNO8";  // Make sure to use the actual token
+        String token = "\"eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiZmlyc3ROYW1lIjoid2FnaCIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImxhc3ROYW1lIjoiRG9lIiwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI4Mzc2OCwiZXhwIjoxNzM1MzEzNzY4fQ.HOePleVmO4t_5QdGvHvIRLQt3QDqL4Ob_K1OlnxjBNo";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

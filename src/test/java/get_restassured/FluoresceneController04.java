@@ -22,7 +22,7 @@ public class FluoresceneController04 {
         
         // Add Authorization header for Bearer Token Authentication
         // Replace 'your_token_here' with the actual Bearer token you received
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJhY3RpdmUiOnRydWUsInJvbGVzIjpbIkJpZGRlciJdLCJmaXJzdE5hbWUiOiJ3YWdoIiwidXNlcklkIjoiMTA1Yzg0NGItNWNlZi00NGIyLWFlMzEtOTQxYmZiOTQ3Mzc2IiwibGFzdE5hbWUiOiJEb2UiLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjM1NjMxOSwiZXhwIjoxNzMyMzYyMzE5fQ.ErLWZDJ_lEBx7oIweQagqvQq0zMZnhUeJxAU9tzTNO8";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI5NzU3OCwiZXhwIjoxNzM1MzI3NTc4fQ.g3LQctxXFZMqweDBxxcpCW3PeITsBc41rt37TYmsIJA";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

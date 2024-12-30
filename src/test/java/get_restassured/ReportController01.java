@@ -22,17 +22,17 @@ public class ReportController01 {
      
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjEwNWM4NDRiLTVjZWYtNDRiMi1hZTMxLTk0MWJmYjk0NzM3NiIsImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjYxMjk1NywiZXhwIjoxNzMyNjE4OTU3fQ.3VwcDR5rSz9A3ZyLFDvpLlwqErJQk9G_DQHcsb0TEnQ";  
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI5NjI0OCwiZXhwIjoxNzM1MzI2MjQ4fQ.MKfITE5ivdYZ15uvYHIBCV5F_--_anFV0C-Wq3l82L0";  
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required
         request.header("Content-Type", "application/json");
         
-      //  String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
+        String userId = "7828500F-5781-40D5-9E61-ADF2A09EB993";
        // String auctionId = "ACFFE150-2857-4A32-A25C-B262BBDB9DA3"; 
         
         // Add path parameters dynamically
-      // request.pathParam("userId", userId);
+      request.pathParam("userId", userId);
       //  request.pathParam("auctionId", auctionId);
         
         // Send the GET request with query parameters

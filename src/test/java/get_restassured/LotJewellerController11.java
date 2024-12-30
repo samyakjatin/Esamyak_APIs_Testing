@@ -21,7 +21,7 @@ public class LotJewellerController11 {
         request.queryParam("password", "samyak@2024");
         
         // Add Authorization header for Bearer Token Authentication
-        String token = "eyJhbGciOiJIUzI1NiJ9.eyJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjEwNWM4NDRiLTVjZWYtNDRiMi1hZTMxLTk0MWJmYjk0NzM3NiIsImZpcnN0TmFtZSI6IndhZ2giLCJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczMjI1NjU3OSwiZXhwIjoxNzMyMjYyNTc5fQ.qQ8QUfA14moHuEpLtGQweWnOtHsU-JOKmOkvCmRoCHM";  // Make sure to use the actual token
+        String token = "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6WyJCaWRkZXIiXSwiYWN0aXZlIjp0cnVlLCJsYXN0TmFtZSI6IkRvZSIsInVzZXJJZCI6IjM0NTAwNjAyLTcyNmQtNGViNC05MWI2LTZhZjIxZDllOGRhMiIsImZpcnN0TmFtZSI6IndhZ2giLCJzdWIiOiJwcmFzaGFudCIsImlhdCI6MTczNTI5NjI0OCwiZXhwIjoxNzM1MzI2MjQ4fQ.MKfITE5ivdYZ15uvYHIBCV5F_--_anFV0C-Wq3l82L0";  // Make sure to use the actual token
         request.header("Authorization", "Bearer " + token);  // Add Bearer token in Authorization header
         
         // Optional: Set headers if required

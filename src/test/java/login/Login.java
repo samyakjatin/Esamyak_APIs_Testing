@@ -57,7 +57,6 @@ public class Login {
 		System.out.println(statusCode);
 		System.out.println(response.getBody().asString());
 		
-
 		Assert.assertEquals(statusCode, 200);
 	}	
 }

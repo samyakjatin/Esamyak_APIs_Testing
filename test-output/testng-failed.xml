@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="post_restassured.PolishController02">
+      <class name="admin.UserController">
         <methods>
-          <include name="createSymmetry"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="test07GetKycByUserId"/>
         </methods>
-      </class> <!-- post_restassured.PolishController02 -->
+      </class> <!-- admin.UserController -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
